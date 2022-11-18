@@ -68,7 +68,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .text-container {
@@ -98,7 +98,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .blog-text .text-container {
@@ -112,3 +112,106 @@ p {
 }
 
 /* ========================== FOOTER ==========================*/
+.message-container {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.message-container form {
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+  grid-template-rows: 20% 10% 10% 10% 30% 20%;
+  grid-template-areas:
+    "l1 l1 l1"
+    "n1 v1 e1"
+    "n2 v1 e2"
+    "m1 m1 m1"
+    "m2 m2 m2"
+    "b1 b1 b1";
+}
+
+.message-container legend {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px;
+  grid-area: l1;
+}
+.message-container label {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.message-container input {
+  border: 1px solid lightgray;
+  height: 40px;
+}
+#lname {
+  grid-area: n1;
+}
+#name {
+  grid-area: n2;
+}
+#lemail {
+  grid-area: e1;
+}
+#email {
+  grid-area: e2;
+}
+
+#lmess {
+  grid-area: m1;
+}
+
+#message {
+  grid-area: m2;
+}
+
+.message-container textarea {
+  resize: none;
+  border: 1px solid lightgray;
+}
+
+.message-container button {
+  width: 220px;
+  margin: 30px auto;
+  grid-area: b1;
+}
+
+/* ========================== FOOTER ==========================*/
+.social-container {
+  text-align: center;
+  max-width: 500px;
+  margin: 80px auto;
+}
+
+.social-container ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-container li {
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 500px;
+  padding: 12px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.social-container a {
+  color: black;
+}
+
+.social-container li:hover {
+  border: 1px solid rgb(43, 192, 234);
+}
+
+.social-container a:hover {
+  color: rgb(43, 192, 234);
+}
