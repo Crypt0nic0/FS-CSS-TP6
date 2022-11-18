@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./font/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: 1px solid grey;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+button:hover {
+  color: rgb(43, 192, 234);
+  border: 1px solid rgb(43, 192, 234);
+}
+
+a {
+  text-decoration: none;
+}
