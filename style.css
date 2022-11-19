@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("./font/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-family: "Source Sans Pro";
+  src: url("./font/SourceSansPro-ExtraLight.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", serif;
   list-style: none;
 }
 
@@ -113,7 +113,22 @@ p {
   border-bottom: 1px solid lightgray;
 }
 
-/* ========================== FOOTER ==========================*/
+/* ========================== FORM ==========================*/
+.email-form {
+  position: relative;
+}
+
+.email-form::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background: lightgray;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .message-container {
   width: 60%;
   margin: 50px auto;
@@ -150,6 +165,8 @@ p {
 .message-container input {
   border: 1px solid lightgray;
   height: 40px;
+  padding: 5px 10px;
+  font-size: 1rem;
 }
 #lname {
   grid-area: n1;
@@ -175,12 +192,24 @@ p {
 .message-container textarea {
   resize: none;
   border: 1px solid lightgray;
+  font-size: 1rem;
+  padding: 5px 10px;
 }
 
 .message-container button {
   width: 220px;
   margin: 30px auto;
   grid-area: b1;
+}
+
+.message-container input:focus {
+  outline: none !important;
+  border: 1px solid rgb(43, 192, 234);
+}
+
+.message-container textarea:focus {
+  outline: none !important;
+  border: 1px solid rgb(43, 192, 234);
 }
 
 /* ========================== FOOTER ==========================*/
@@ -200,14 +229,15 @@ p {
   border: 1px solid grey;
   border-radius: 500px;
   padding: 12px;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   transition: 0.4s ease;
 }
 
 .social-container a {
   color: black;
+  transition: 0.4s ease;
 }
 
 .social-container li:hover {
